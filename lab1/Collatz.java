@@ -1,4 +1,6 @@
-/** Class that prints the Collatz sequence starting from a given number.
+package lab1;
+
+/** Class that prints the lab1e.Collatz sequence starting from a given number.
  *  @author YOUR NAME HERE
  */
 public class Collatz {
