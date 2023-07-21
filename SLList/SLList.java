@@ -1,3 +1,4 @@
+package SLList;
 
 public class SLList {
 
@@ -58,5 +59,12 @@ public class SLList {
             System.out.println("SLList is already empty!");
     }
 
+
+    public static void main(String[] args) {
+        SLList list = new SLList();
+        list.delete();
+        list.addLast(1);
+        list.add(1);
+    }
 
 }
