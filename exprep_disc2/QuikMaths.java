@@ -1,0 +1,56 @@
+package exprep_disc2;
+
+public class QuikMaths {
+
+    public static void multiplyBy3(int[] A) {
+        for (int x : A) {
+            x = x * 3;
+        }
+    }
+
+    public static void multiplyBy2(int[] A) {
+        int[] B = A;
+        for (int i = 0; i < B.length; i += 1) {
+            B[i] *= 2;
+        }
+    }
+
+    public static void swap(int A, int B) {
+        int temp = B;
+        B = A;
+        A = temp;
+    }
+
+    public static void main(String[] args) {
+
+        Library ae = new Library(1);
+
+        int[] arr;
+        arr = new int[] {2, 3, 3, 4};
+        multiplyBy3(arr);
+
+        /* Value of arr: {2,3,3,4} */
+        /**
+         * This is because for(int x: A) copy the values of array to integer that is independent from original array.
+         * Therefore the changes on x has no effect on original array.
+         */
+
+        arr = new int[] {2, 3, 3, 4};
+        multiplyBy2(arr);
+
+        /* Value of arr: {4,6,6,8} */
+        /**
+         * It doubles the values of original array
+         */
+
+        int a = 6;
+        int b = 7;
+        swap(a, b);
+
+        /* Value of a: 6 Value of b: 7 */
+        /**
+         * This is because a and b are the primitive types so they are being passed by value instead of referance.
+         */
+    }
+
+}
